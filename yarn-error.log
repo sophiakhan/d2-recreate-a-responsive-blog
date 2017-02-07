@@ -1,0 +1,45 @@
+Arguments: 
+  /usr/local/bin/node /Users/sophiakhan/.yarn/bin/yarn.js install
+
+PATH: 
+  /Users/sophiakhan/.yarn/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  0.19.1
+
+Node version: 
+  6.9.4
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "d1-use-gulp-sass",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": {},
+    "license": "MIT",
+  
+  "scripts": {
+    "start": "serve -p 8080",
+    "gulp": "gulp serve"
+  },
+  
+  
+    "dependencies": {
+      "browser-sync": "^2.18.7",
+      "gulp": "^3.9.1",
+      "gulp-sass": "^3.1.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EACCES: permission denied, open '/Users/sophiakhan/Library/Caches/Yarn/npm-array-unique-0.2.1-a1d97ccafcbc2625cc70fadceb36a50c58b01a53/package.json'
+      at Error (native)
