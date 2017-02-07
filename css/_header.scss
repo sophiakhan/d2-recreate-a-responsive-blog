@@ -1,0 +1,44 @@
+header {
+    display: block;
+    background: $colorBlue;
+    background-size: cover;
+    color: $colorWhite;
+    text-align: center;
+
+    img {
+        border-radius: 50%;
+        box-shadow: 0px 0px 13px 0px black;
+    }
+
+    .greeting {
+        color: $colorWhiteTrans;
+        font-size: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        font-size: 36px;
+
+            #amp {
+            color: $colorWhiteTrans;
+            font-weight: lighter;
+    }
+    }
+
+    button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: 2px solid lighten( $colorBlue, 40%);
+        border-radius: 4px;
+        padding: 10px 20px 10px 20px;
+        background: $colorBlue;
+        color: $colorWhite;
+        font-size: 14px;
+
+            i {
+                margin-left: 60px;
+            }
+    }
+
+}
