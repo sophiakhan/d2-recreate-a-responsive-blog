@@ -4,6 +4,7 @@ header {
     background-size: cover;
     color: $colorWhite;
     text-align: center;
+    padding-top: 15px;
 
     img {
         border-radius: 50%;
@@ -39,6 +40,22 @@ header {
             i {
                 margin-left: 60px;
             }
+    }
+
+    .made-in {
+        text-align: left;
+        font-size: 10px;
+        color: $colorWhiteTrans;
+        padding-left: 10px;
+
+            i {
+                margin-right: 5px;
+            }
+    }
+
+    .icons {
+        text-align: right;
+        color: $colorWhiteTrans;
     }
 
 }

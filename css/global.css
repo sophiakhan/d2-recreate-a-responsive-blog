@@ -4,6 +4,7 @@ header {
   background-size: cover;
   color: white;
   text-align: center;
+  padding-top: 15px;
 }
 
 header img {
@@ -42,15 +43,35 @@ header button i {
   margin-left: 60px;
 }
 
+header .made-in {
+  text-align: left;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 10px;
+}
+
+header .made-in i {
+  margin-right: 5px;
+}
+
+header .icons {
+  text-align: right;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .container {
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -65,10 +86,43 @@ body {
   border: 1px solid black;
 }
 
+.blue-heading {
+  color: blue;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.black-heading {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.black-heading i {
+  color: blue;
+  padding-left: 30px;
+}
+
 ul {
   list-style-type: none;
 }
 
+ul li {
+  margin-top: 5px;
+}
+
 ul i {
-  font-size: 8px;
+  font-size: 5px;
+  color: blue;
+}
+
+@media screen and (min-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
 }
