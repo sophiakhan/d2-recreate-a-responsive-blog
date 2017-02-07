@@ -82,11 +82,24 @@ ul {
     main {
         padding-left: 30px;
     }
+
+    img {
+        width: 51%;
+    }
 }
 
 //desktop
 
 @media screen and (max-width: 768px) {
     
+    body {
+        flex-direction: column;
+    }
+
+    main {
+        :nth-child (1) {
+            flex: 2;
+        }
+    }
 }
 

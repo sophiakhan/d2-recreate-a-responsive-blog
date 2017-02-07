@@ -45,6 +45,7 @@ header button i {
 header .icons {
   display: flex;
   color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
 }
 
 header .icons .left {
@@ -120,5 +121,14 @@ ul i {
   }
   main {
     padding-left: 30px;
+  }
+  img {
+    width: 51%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
   }
 }
