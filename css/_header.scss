@@ -1,5 +1,4 @@
 header {
-    display: block;
     background: $colorBlue;
     background-size: cover;
     color: $colorWhite;
@@ -42,20 +41,21 @@ header {
             }
     }
 
-    .made-in {
-        text-align: left;
-        font-size: 10px;
+    .icons {
+        display: flex;
         color: $colorWhiteTrans;
-        padding-left: 10px;
 
-            i {
-                margin-right: 5px;
+
+            .left {
+                flex: 1;
+                text-align: left;
+            }
+
+            .right { 
+                flex: 1;
+                text-align: right;
             }
     }
 
-    .icons {
-        text-align: right;
-        color: $colorWhiteTrans;
-    }
 
 }

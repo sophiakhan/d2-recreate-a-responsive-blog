@@ -1,6 +1,5 @@
 header {
-  display: block;
-  background: blue;
+  background: #0066ff;
   background-size: cover;
   color: white;
   text-align: center;
@@ -31,10 +30,10 @@ header .intro #amp {
 header button {
   margin-top: 30px;
   margin-bottom: 30px;
-  border: 2px solid #ccccff;
+  border: 2px solid #cce0ff;
   border-radius: 4px;
   padding: 10px 20px 10px 20px;
-  background: blue;
+  background: #0066ff;
   color: white;
   font-size: 14px;
 }
@@ -43,20 +42,19 @@ header button i {
   margin-left: 60px;
 }
 
-header .made-in {
-  text-align: left;
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.7);
-  padding-left: 10px;
-}
-
-header .made-in i {
-  margin-right: 5px;
-}
-
 header .icons {
-  text-align: right;
+  display: flex;
   color: rgba(255, 255, 255, 0.7);
+}
+
+header .icons .left {
+  flex: 1;
+  text-align: left;
+}
+
+header .icons .right {
+  flex: 1;
+  text-align: right;
 }
 
 * {
@@ -68,26 +66,17 @@ body {
   font-size: 12px;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.row {
   display: flex;
-  border: 1px solid red;
   flex-direction: column;
 }
 
-.column {
+header,
+main {
   flex: 1;
-  border: 1px solid black;
 }
 
 .blue-heading {
-  color: blue;
+  color: #0066ff;
   font-weight: bold;
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -104,7 +93,7 @@ body {
 }
 
 .black-heading i {
-  color: blue;
+  color: #0066ff;
   padding-left: 30px;
 }
 
@@ -118,11 +107,18 @@ ul li {
 
 ul i {
   font-size: 5px;
-  color: blue;
+  color: #0066ff;
 }
 
 @media screen and (min-width: 768px) {
-  .row {
-    flex-direction: column;
+  body {
+    flex-direction: row;
+  }
+  header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main {
+    padding-left: 30px;
   }
 }
