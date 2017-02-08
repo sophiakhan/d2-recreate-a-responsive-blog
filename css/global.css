@@ -127,8 +127,16 @@ ul i {
   }
 }
 
-@media screen and (max-width: 768px) {
-  body {
+@media screen and (min-width: 1024px) {
+  main {
+    display: flex;
     flex-direction: column;
+  }
+  main .column-2 {
+    flex: 2;
+    float: left;
+  }
+  main .column-10 {
+    flex: 10;
   }
 }
