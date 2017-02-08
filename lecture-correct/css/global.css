@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+/* Grids */
+body, header, .icons, main section {
+    display: flex;
+}
+
+body, header, main section {
+    flex-direction: column;
+}
+
+/* Columns */
+header, header section, main, .icons > div, main section > div {
+    flex: 1;
+}
+
+
+/* Header Column */
+header {
+    padding: 60px 20px 20px 20px;
+    background: blue;
+    color: white;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header section:last-child {
+    display: flex;
+    align-items: flex-end;
+}
+
+header img {
+    border-radius: 50%;
+    max-width: 200px;
+    box-shadow: -5px 5px 10px mediumblue;
+    border: 1px solid mediumblue;
+}
+header h5 {
+    text-transform: uppercase;
+    opacity: .65;
+}
+
+header h1 > span {
+    font-weight: normal;
+}
+
+header button {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background: transparent;
+    margin-bottom: 40px;
+}
+
+header .icons {
+    flex: 1;
+}
+
+header .icons a {
+    color: white;
+}
+
+header .icons span {
+    opacity: .65;
+    font-size: 11px;
+}
+
+header .icons > div:first-child {
+    text-align: left;
+}
+
+header .icons > div:last-child {
+    text-align: right;
+}
+
+/* Main Column */
+main {
+    padding: 50px 30px 30px 30px;
+}
+
+main section {
+    margin-bottom: 60px;
+}
+
+main h5 {
+    text-transform: uppercase;
+    color: blue;
+    font-weight: bold;
+    margin: 0;
+}
+
+main p {
+    line-height: 30px;
+}
+
+main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+main li {
+    font-weight: bold;
+    line-height: 40px;
+}
+
+main li > .fa {
+    color: blue;
+    margin-right: 20px;
+    font-size: 10px;
+}
+
+main h4 {
+    text-transform: uppercase;
+}
+
+main h4 > .fa {
+    color: blue;
+    margin-left: 20px;
+}
+
+/* Tablet Changes */
+@media all and (min-width: 767px) {
+    body {
+        flex-direction: row;
+    }
+    main {
+        padding-left: 40px;
+    }
+}
+
+/* Laptop Changes */
+@media all and (min-width: 991px) {
+    main section {
+        flex-direction: row;
+    }
+
+    main section > div:first-child {
+        flex: 3;
+    }
+
+    main section > div:last-child {
+        flex: 9;
+    }
+}

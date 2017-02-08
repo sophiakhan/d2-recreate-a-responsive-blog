@@ -62,21 +62,27 @@ header .icons .right {
   box-sizing: border-box;
 }
 
+body, header, .icons, main section {
+  display: flex;
+}
+
+body, header, main section {
+  flex-direction: column;
+}
+
+header, main, main section {
+  flex: 1;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
-  flex-direction: column;
 }
 
-header,
-main {
-  flex: 1;
-}
-
-.blue-heading {
+section h5 {
   color: #0066ff;
   font-weight: bold;
   font-size: 13px;
@@ -85,7 +91,7 @@ main {
   margin-bottom: 20px;
 }
 
-.black-heading {
+section h4 {
   color: black;
   font-weight: bold;
   font-size: 14px;
@@ -93,7 +99,7 @@ main {
   margin-bottom: 10px;
 }
 
-.black-heading i {
+section h4 i {
   color: #0066ff;
   padding-left: 30px;
 }
@@ -128,15 +134,13 @@ ul i {
 }
 
 @media screen and (min-width: 1024px) {
-  main {
-    display: flex;
-    flex-direction: column;
+  main section {
+    flex-direction: row;
   }
-  main .column-2 {
-    flex: 2;
-    float: left;
+  main section div:first-child {
+    flex: 3;
   }
-  main .column-10 {
-    flex: 10;
+  main section div:last-child {
+    flex: 9;
   }
 }

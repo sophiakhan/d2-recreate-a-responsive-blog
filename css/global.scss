@@ -14,23 +14,29 @@ $openSans: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 
+body, header, .icons, main section {
+    display: flex;
+}
+
+body, header, main section {
+    flex-direction: column;
+}
+
+header, main, main section {
+    flex: 1;
+}
+
 body {
     font-family: $openSans;
     font-size: 12px;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
-    flex-direction: column;
-}
-
-header, 
-main { 
-    flex: 1;
 }
 
 //content
 
-.blue-heading {
+section h5 {
     color: $colorBlue;
     font-weight: bold;
     font-size: 13px;
@@ -39,7 +45,7 @@ main {
     margin-bottom: 20px;
 }
 
-.black-heading {
+section h4 {
     color: black;
     font-weight: bold;
     font-size: 14px;
@@ -90,21 +96,16 @@ ul {
 //desktop
 
 @media screen and (min-width: 1024px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        //border: 1px solid red;
+    main section {
+        flex-direction: row;
 
-        .column-2 {
-            flex: 2;
-            float: left;
-           // border: 1px solid darkorchid;
-        }
+            div:first-child {
+                flex: 3;
+            }
 
-        .column-10 {
-            flex: 10;
-           // border: 1px solid hotpink;
-        }
+            div:last-child {
+                flex: 9;
+            }
     }
 
 }
